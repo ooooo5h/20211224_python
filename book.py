@@ -32,3 +32,12 @@ class Book:
             print(f'연령제한 : {self.la}세 이용가')
         
         
+    # 어떤 사람의 출생년도를 파라미터로 받아서, 대여 가능 여부를 판단해주는 메쏘드
+    def is_rent_available(self, birth_year):
+                
+        age = 2021 - birth_year + 1   # 나이 나옴
+        
+        if age >= self.la:
+            print('대여 가능합니다.')
+        else:
+            print('좀 더 크고 다시빌리렴')

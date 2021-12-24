@@ -27,3 +27,7 @@ book2.print_book_info()
 book3 = Book()
 book3.set_data('뽀로로', 500, 0)
 book3.print_book_info()
+
+
+
+book1.is_rent_available(2005)
