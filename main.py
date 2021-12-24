@@ -5,4 +5,8 @@ from book import Book   # book.py 파일안에서 Book클래스를 main.py에 �
 book1 = Book()
 
 # 방금 만든 책의 데이터 설정(타짜, 700, 19)
-book1.set_data('타짜', 700, 19)
+
+# set_data메쏘드의 self 파라미터에는 => book1이 대입됨
+book1.set_data('타짜', 700, 19)   # 전달인자(=arguments)들을, self 파라미터만 제외하고 작성하면됨
+
+book1.print_book_info()
