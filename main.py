@@ -59,6 +59,8 @@ print(result)
 # 사용자 정보 출력
 user1 = User()
 user1.set_data('전은형', 1991, 777777)
+
+print(f'사용자1의 이름 : {user1.point}')
 user1.print_user_info()
 
 
@@ -68,4 +70,8 @@ user2.name = '김학생'
 user2.birt_year = 2005
 user2.point = 5000
 
+# user2.is_man = True
+
 user2.print_user_info()
+
+# print(f'성별 : {user2.is_man}')
