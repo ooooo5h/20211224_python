@@ -1,4 +1,6 @@
 from book import Book   # book.py 파일안에서 Book클래스를 main.py에 가져오기
+from user import User
+
 # 만들어둔 클래스들을 활용해서 실제 동작 관련 코드 작성
 
 # 책의 인스턴스 하나를 생성 + 변수에 담아줘야지 접근이 가능함
@@ -45,3 +47,16 @@ if num > 5:
     result = '5보다 크다.'
     
 print(result)
+
+# 연습문제 클래스 추가 - User
+# set_data 메쏘드 추가해서 이름/출생년도/보유포인트를 받아서 저장
+# print_user_info 메쏘드 추가해서 위의 3가지 정보 출력
+
+
+# 사용자 한 명 생성 '본인이름', 출생년도, 포인트로 데이터 세팅
+# 정보 출력하기
+
+# 사용자 정보 출력
+user1 = User()
+user1.set_data('전은형', 1991, 777777)
+user1.print_user_info()
