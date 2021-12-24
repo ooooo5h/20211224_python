@@ -7,7 +7,7 @@ class Book:
     # 책의 하위 정보 (제목 , 대여료, 연령제한(나이)) => 별도의 변수로 명시하지 않는다고 했지?
     
     # 생성자 커스터마이징 : 왜 뜯어고쳐? => 책 한권을 객체로 만들 때, 제목/대여료/연령제한 나이도 한번에 세팅되게 하려고
-    def __init__ (self, title, rent_fee, limit_age):
+    def __init__ (self, title='미정', rent_fee=1000, limit_age=0):
         # 받아온 재료들을 객체 변수로 담아두자
         self.t = title
         self.rf = rent_fee

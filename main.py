@@ -4,12 +4,12 @@ from user import User
 # 만들어둔 클래스들을 활용해서 실제 동작 관련 코드 작성
 
 # 책의 인스턴스 하나를 생성 + 변수에 담아줘야지 접근이 가능함
-book1 = Book()
+book1 = Book('타짜', 700, 19)    # Book 클래스의 생성자에서는 파라미터 3개를 요구(하도록 수정됨), 메인에서 사용시에는 arguments를 안보내고있다 => 형태가 안맞아서 에러가 남
 
 # 방금 만든 책의 데이터 설정(타짜, 700, 19)
 
 # set_data메쏘드의 self 파라미터에는 => book1이 대입됨
-book1.set_data('타짜', 700, 19)   # 전달인자(=arguments)들을, self 파라미터만 제외하고 작성하면됨
+# book1.set_data('타짜', 700, 19)   # 전달인자(=arguments)들을, self 파라미터만 제외하고 작성하면됨
 
 book1.print_book_info()
 
