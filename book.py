@@ -15,5 +15,14 @@ class Book:
         # ex) name = 전은형
         
         self.t = title      # 책 한권의 t라는 변수에 => 파라미터로 들어온 title에 적힌 값을 기록해주겠다
-        self.rf = rent_fee  
+        self.rf = rent_fee      # title, rent_fee, limit_age는 def set_data안에서만 쓰인다
         self.la = limit_age
+        
+    
+    # 책의 정보를 출력하는 기능
+    def print_book_info(self)  : # 파라미터 필요 없어도 self는 항상 들어가야한다  
+        print('===== 도서 정보 출력 =====')
+        print(f'제목 : {self.t}')      # 명령을 시킨 책의 제목에 접근
+        print(f'대여료 : {self.rf}')
+        print(f'연령제한 : {self.la}세 이용가')
+        
