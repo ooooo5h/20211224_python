@@ -45,7 +45,17 @@ class Book:
             print(f'연령제한 : 전체이용가')
         else:
             print(f'연령제한 : {self.la}세 이용가')
+            
+        # 책을 빌려간 사람이 있다면, 그 사람의 이름을 출력
+        # 책을 빌려간 사람이 없다면, '대여자 없음' 표현
+        if self.rent_user:      # self.rent_user가 None상태라면, False로 간주함 실체가 있다면, True로 간주함
+            # 빌려간 사람이 있다! (= None이 아니다)
+            pass
         
+        if self.rent_user is None:   # self.rent_user가 None 상태인가?
+            print('대여자가 없음')
+            
+                
         
     # 어떤 사람의 출생년도를 파라미터로 받아서, 대여 가능 여부를 판단해주는 메쏘드
     def is_rent_available(self, birth_year):

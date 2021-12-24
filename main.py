@@ -78,3 +78,5 @@ user2.print_user_info()
 user3 = User('이아동', 2012, 1000)
 user3.print_user_info()
 
+# boo1의 정보 출력
+book1.print_book_info()
