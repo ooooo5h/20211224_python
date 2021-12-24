@@ -52,7 +52,7 @@ class Book:
             # 빌려간 사람이 있다! (= None이 아니다)
             pass
         
-        if self.rent_user is None:   # self.rent_user가 None 상태인가?
+        if self.rent_user == None:   # self.rent_user가 None 상태인가?
             print('대여자가 없음')
             
                 
