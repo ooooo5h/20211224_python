@@ -18,6 +18,8 @@ class Book:
         self.rf = rent_fee      # title, rent_fee, limit_age는 def set_data안에서만 쓰인다
         self.la = limit_age
         
+        main_title = '임시 제목'
+        
     
     # 책의 정보를 출력하는 기능
     def print_book_info(self)  : # 파라미터 필요 없어도 self는 항상 들어가야한다  
@@ -41,3 +43,6 @@ class Book:
             print('대여 가능합니다.')
         else:
             print('좀 더 크고 다시빌리렴')
+            
+
+    
